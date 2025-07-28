@@ -34,7 +34,7 @@ USER_SIDE_INCOME_MONTHLY = int(os.getenv("USER_SIDE_INCOME_MONTHLY", "5000000"))
 TOTAL_MONTHLY_INCOME = USER_MONTHLY_INCOME + USER_SIDE_INCOME_MONTHLY
 
 # DB_URL mặc định trỏ vào volume /data (hãy mount volume trên Railway)
-DB_URL = os.getenv("DB_URL", "sqlite:////data/debtbot.db")
+DB_URL = os.getenv("DB_URL", "sqlite:///debtbot.db")
 
 # Ngày bắt đầu kế hoạch
 START_PLAN = date.fromisoformat(os.getenv("START_PLAN", "2025-08-01"))
