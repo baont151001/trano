@@ -6,7 +6,8 @@ import pytz
 from sqlalchemy import (
     create_engine, Column, Integer, String, Date, Boolean, ForeignKey, DateTime
 )
-from sqlalchemy.orm import sessionmaker, declarative_base, relationship, Sessionfrom telegram import Update
+from sqlalchemy.orm import sessionmaker, declarative_base, relationship, Session
+from telegram import Update
 from telegram.ext import (
     Application, CommandHandler, ContextTypes, JobQueue
 )
